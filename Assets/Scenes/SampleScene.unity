@@ -439,7 +439,6 @@ GameObject:
   - component: {fileID: 1511040941}
   - component: {fileID: 1511040940}
   - component: {fileID: 1511040939}
-  - component: {fileID: 1511040938}
   - component: {fileID: 1511040937}
   m_Layer: 6
   m_Name: RealCube
@@ -463,18 +462,6 @@ MonoBehaviour:
   offset: 25
   isReal: 1
   linkedObject: {fileID: 1220889899}
---- !u!114 &1511040938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1511040936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cb1d18e985e010438629cae09be92e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &1511040939
 BoxCollider:
   m_ObjectHideFlags: 0
