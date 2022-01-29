@@ -29,8 +29,9 @@ public class Dropoff : MonoBehaviour
         hintMessage.enabled = false;
     }
     private void OnTriggerEnter(Collider other)
-    {Debug.Log(ItemNeeded.ToString());
-        if (other.CompareTag("Player") && Inventory.Instance.inventoryNames.Contains(ItemNeeded.ToString()))// If other has required item
+    {
+        if (other.CompareTag("Player") && 
+            Inventory.Instance.inventoryNames.Contains(ItemNeeded.ToString()))// If other has required item
         {
             hintMessage.enabled = false;
             DropoffItem();
