@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class TextBillboard : MonoBehaviour
 {
-    
+    public Transform camera;
+
     // Update is called once per frame
     void Update()
     {
-        this.transform.LookAt(transform);
-        transform.rotation = transform.rotation;
+        this.transform.LookAt(camera);
+        transform.rotation = camera.rotation;
     }
 }

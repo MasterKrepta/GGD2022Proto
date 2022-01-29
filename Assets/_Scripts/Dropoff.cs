@@ -34,6 +34,7 @@ public class Dropoff : MonoBehaviour
             Inventory.Instance.inventoryNames.Contains(ItemNeeded.ToString()))// If other has required item
         {
             hintMessage.enabled = false;
+            Inventory.Instance.inventoryNames.Remove(ItemNeeded.ToString());
             DropoffItem();
             
             canPickup = true;
