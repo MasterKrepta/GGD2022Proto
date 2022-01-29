@@ -13,7 +13,7 @@ public class PlayerPickup : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Pickup pickup = other.GetComponent<Pickup>();
+        Dropoff pickup = other.GetComponent<Dropoff>();
         if (pickup != null && pickup.canPickup)
         {
             inRange = true;
