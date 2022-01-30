@@ -14,6 +14,7 @@ public class Attack : MonoBehaviour
     {
         //anim = GetComponent<Animator>();
         canAttack = true;
+        GetComponent<AudioSource>().Play();
     }
 
     IEnumerator Cooldown()
