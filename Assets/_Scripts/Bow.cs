@@ -13,6 +13,7 @@ public class Bow : MonoBehaviour
             try
             {
                 GameObject.Find("RealSword").SetActive(false);
+                GameObject.Find("RealSpell").SetActive(false);
             }
             catch (System.Exception)
             {

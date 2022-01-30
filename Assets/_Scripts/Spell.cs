@@ -14,6 +14,7 @@ public class Spell : MonoBehaviour
             try
             {
                 GameObject.Find("RealBow").SetActive(false);
+                GameObject.Find("RealSword").SetActive(false);
             }
             catch (System.Exception)
             {
