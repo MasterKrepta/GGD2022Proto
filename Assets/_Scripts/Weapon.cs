@@ -10,7 +10,7 @@ public class Weapon : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            FindObjectOfType<PlayerAttack>().canAttack = true;
+//            FindObjectOfType<PlayerAttack>().canAttack = true;
             realWeapon.gameObject.SetActive(true);
             Destroy(this.gameObject);
 
