@@ -21,5 +21,11 @@ public class DealDamage : MonoBehaviour
             other.gameObject.tag = "Untagged";
             //Destroy(other.gameObject);
         }
+
+        if (other.CompareTag("Player"))
+        {
+            other.GetComponent<Animator>().SetTrigger("Hit");
+            Debug.Log("PlayerTakesDamage");
+        }
     }
 }
