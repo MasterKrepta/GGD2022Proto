@@ -5,11 +5,11 @@ using UnityEngine;
 public enum KeyItems  {
     NONE,
     GAMEBOY,
-    WAND,
-    FLASHLIGHT,
     SWORD,
     SMALLKEY,
-    GOLDKEY
+    GOLDKEY,
+    CRYSTAL,
+    LAUNDRY
 
 }
 

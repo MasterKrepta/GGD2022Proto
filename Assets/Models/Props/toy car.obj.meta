@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: a2a0e5da8ea397a43ae4ecdace9d8dd0
+guid: 1f7e620458e5e6649ae42ad4501fd93e
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: toy_carMat
+    second: {fileID: 2100000, guid: e27864d9ed945d5498b20eb41fff8713, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

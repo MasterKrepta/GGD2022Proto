@@ -6,6 +6,12 @@ public class SpawnStarter : MonoBehaviour
 {
     private void OnEnable()
     {
-        GameObject.FindObjectOfType<Spawner>().BeginSpawn();
+        Spawner[] SPAWNERS = GameObject.FindObjectsOfType<Spawner>();
+
+        foreach (var s in SPAWNERS)
+        {
+            s.BeginSpawn();
+        }
+
     }
 }
