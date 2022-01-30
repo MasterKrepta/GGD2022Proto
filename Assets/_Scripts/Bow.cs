@@ -10,7 +10,16 @@ public class Bow : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            GameObject.Find("RealSword").SetActive(false);
+            try
+            {
+                GameObject.Find("RealSword").SetActive(false);
+            }
+            catch (System.Exception)
+            {
+
+                
+            }
+            
             realWeapon.gameObject.SetActive(true);
             Destroy(this.gameObject);
 

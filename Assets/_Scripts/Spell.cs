@@ -5,13 +5,24 @@ using UnityEngine;
 public class Spell : MonoBehaviour
 {
     public Transform realWeapon;
+    public GameObject UIGraphic;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            GameObject.Find("RealBow").SetActive(false);
+            try
+            {
+                GameObject.Find("RealBow").SetActive(false);
+            }
+            catch (System.Exception)
+            {
+
+                
+            }
+            
             realWeapon.gameObject.SetActive(true);
+            UIGraphic.SetActive(true);
             Destroy(this.gameObject);
 
 
